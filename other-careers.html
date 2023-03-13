@@ -53,5 +53,25 @@
       text-shadow: 1px 1px rgb(237, 207, 151);
       list-style-type: "\2606";
     }
+    body {
+      display: grid;
+      grid:
+        " h    h   h   " auto
+        " m  m   n" auto
+        " m m  f " auto
+        / 1fr 5fr 1fr;
+    }
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+    }
+    main {
+      grid-area: m;
+    }
+    footer {
+      grid-area: f;
+    }
   </style>
 </body>
